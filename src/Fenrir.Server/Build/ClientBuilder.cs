@@ -1,8 +1,8 @@
 ﻿using Mono.Cecil;
 using Mono.Cecil.Cil;
-using Quasar.Common.Cryptography;
-using Quasar.Common.Helpers;
-using Quasar.Server.Models;
+using Fenrir.Common.Cryptography;
+using Fenrir.Common.Helpers;
+using Fenrir.Server.Models;
 using System;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
@@ -96,7 +96,7 @@ namespace Quasar.Server.Build
 
             foreach (var typeDef in asmDef.Modules[0].Types)
             {
-                if (typeDef.FullName == "Quasar.Client.Config.Settings")
+                if (typeDef.FullName == "Fenrir.Client.Config.Settings")
                 {
                     foreach (var methodDef in typeDef.Methods)
                     {
