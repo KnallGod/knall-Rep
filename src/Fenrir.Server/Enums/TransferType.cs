@@ -1,4 +1,4 @@
-namespace Quasar.Server.Enums
+namespace Fenrir.Server.Enums
 {
     public enum TransferType
     {
